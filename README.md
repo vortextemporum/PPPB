@@ -83,19 +83,19 @@ All 64 PPPB are evenly mapped to Midi Notes and CCs in 16 channels.
 E.g,
 
 ```
-# PPPB 1 
+# PPPb 1 
 
 - MIDI CHANNEL: 1 
 - MIDI NOTES: 0 , 23 
 - MIDI CC: 0 , 31
 
-# PPPB 2 
+# PPPb 2 
 
 - MIDI CHANNEL: 1 
 - MIDI NOTES: 24 , 47 
 - MIDI CC: 32 , 63
 
-# PPPB 3 
+# PPPb 3 
 
 - MIDI CHANNEL: 1 
 - MIDI NOTES: 48 , 71
@@ -103,7 +103,7 @@ E.g,
 
 . 
 
-# PPPB 45 
+# PPPb 45 
 
 - MIDI CHANNEL: 12 
 - MIDI NOTES: 48 , 71
@@ -112,7 +112,7 @@ E.g,
 .
 .
 
-# PPPB 64
+# PPPb 64
 
 - MIDI CHANNEL: 16 
 - MIDI NOTES: 72 , 95
