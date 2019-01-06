@@ -1,0 +1,11 @@
+1, weapon_crowbar;
+2, weapon_stunstick;
+3, weapon_pistol;
+4, weapon_357;
+5, weapon_smg1;
+6, weapon_ar2;
+7, weapon_shotgun;
+8, weapon_crossbow;
+9, weapon_rpg;
+10, weapon_frag;
+11, weapon_physcannon;

@@ -1,0 +1,2 @@
+- Add new weapons (TF2, Half-Life, CS:GO), make all of them as separate lists, then merge them in a big list. Make packages?
+- Find a more authentic way for movement (left, right (-1, 1?))
