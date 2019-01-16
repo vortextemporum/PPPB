@@ -1,4 +1,4 @@
-# **PPPB** (**P**suedo **P**layer **P**erformer **B**ots)
+# **PPPB** (**P**seudo **P**layer **P**erformer **B**ots)
 
 **PPPB** is an audiovisual composition and performance tool made in **Garry's Mod** which allows the user to create and control fake player bots in real time using the **MIDI** protocol.
 

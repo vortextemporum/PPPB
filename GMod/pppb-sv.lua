@@ -2,7 +2,7 @@
 ----- Run this file using lua_openscript command in console (You need to start a multiplayer game for this script to work), or put this file in "/lua/autorun/server"
 ----- http://www.berkozdemir.com
 ----- berk.ozd@gmail.com
-
+print("opening sv script")
 util.AddNetworkString( "MidiMessage" )
 print("opened sv script")
 midinotes = {} -- Midi notes table
@@ -36,7 +36,7 @@ function addPerformers(ply)
             if midinotes[groups][notestart].on then
                 if BOTS[groups][people].online == false then
                     local botnum = ((groups - 1) * 4 + people)
-                    newbot = player.CreateNextBot("performer" .. botnum)
+                    newbot = player.CreateNextBot("PPPb" .. botnum)
                     print(newbot)
                     BOTS[groups][people].player = newbot 
                     print(BOTS[groups][people].player)
@@ -240,10 +240,10 @@ function commandshit(newbot, cmd)
             function(velocity) local vel = math.floor((velocity + 1) * -550 / 128 - 50) cmd:SetForwardMove(vel) end, -- Gb - moveBack - speed is mapped for velocity -(50-600)
             function(velocity) local vel = math.floor((velocity + 1) * -550 / 128 - 50) cmd:SetSideMove(vel) end, -- G - moveLeft - speed is mapped for velocity -(50-600)
             function(velocity) local vel = math.floor((velocity + 1) * 550 / 128 + 50) cmd:SetSideMove(vel) end, -- Ab - moveRight - speed is mapped for velocity -(50-600)
-            function() for k, ammo in pairs(ammos) do performer:GiveAmmo( 9999, ammo, true ) end end, -- A, - Gives ammo for all weapons
+            function() for k, ammo in pairs(ammos) do performer:GiveAmmo( 2000, ammo, true ) end end, -- A, - Gives ammo for all weapons
             function() performer:RemoveAllAmmo() end, -- Bb - removes all ammo
             function(pos) print(pos.x, pos.y, pos.z); performer:SetPos(Vector (pos.x, pos.y, pos.z)) end, -- B - Teleports to a point
-            function() if (performer:Alive() ) then performer:Kill() end end
+            function() if (performer:Alive() ) then performer:Kill() end end,
             function() if not (performer:Alive() ) then performer:Spawn() end end
             }
         
